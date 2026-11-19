@@ -6,3 +6,5 @@
 build/
 dist/
 .vscode/
+study-frontend/.env
+study-frontend/node_modules/
