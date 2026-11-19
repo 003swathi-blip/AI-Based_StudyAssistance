@@ -1,0 +1,50 @@
+.workspace-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.modal-header-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-card {
+  background: var(--bg-card);
+  color: var(--text-main);
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Fix inner content/response boxes inside history cards for both light and dark mode */
+.workspace-container div[style*="background"] {
+  background-color: var(--bg-input) !important;
+  color: var(--text-main) !important;
+  border-color: var(--border-color) !important;
+}
+
+.workspace-container div[style*="background"] * {
+  color: var(--text-main) !important;
+}
